@@ -5,6 +5,13 @@ build/
 dist/
 wheels/
 *.egg-info
+data/
+.csv.gz
+.txt
+
 
 # Virtual environments
 .venv
+
+# Secret Keys
+.env
