@@ -267,7 +267,7 @@ def write_summary_report(log_dir, base_data_dir, summary, report_details):
 def main():
     logger.info("Initializing combined stocks and options synchronization pipeline...")
     # Clean output separation config: Data goes to data/, execution logs and reports go to logs/
-    sync_market_data(days_to_check=30, base_data_dir="data", log_dir="logs")
+    sync_market_data(days_to_check=560, base_data_dir="data", log_dir="logs")
     logger.info("Market data pipeline execution completed successfully.")
 
 if __name__ == "__main__":

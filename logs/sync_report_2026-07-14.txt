@@ -1,0 +1,1145 @@
+====================================================
+UNIFIED MARKET DATA SYNC REPORT - 2026-07-14
+====================================================
+Execution Timestamp: 2026-07-14 15:00:41
+Output Data Base:    /home/wsllinux/projects/massive_pipeline/data
+Dedicated Log Dir:   /home/wsllinux/projects/massive_pipeline/logs
+
+STOCKS SYNCHRONIZATION SUMMARY:
+-------------------------------------
+  Total Days Checked:  560
+  Files Converted:     363
+  Already Synced:      19
+  Failed / Unresolved: 178
+
+OPTIONS SYNCHRONIZATION SUMMARY:
+-------------------------------------
+  Total Days Checked:  560
+  Files Converted:     363
+  Already Synced:      19
+  Failed / Unresolved: 178
+
+DETAILED RUN CHRONOLOGY:
+------------------------
+Date       | Asset   | Status   | Notes
+-----------|---------|----------|----------------------------------
+2026-07-13 | stocks | Skipped | Local parquet exists.
+2026-07-13 | options | Skipped | Local parquet exists.
+2026-07-12 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-12 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-11 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-11 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-10 | stocks | Skipped | Local parquet exists.
+2026-07-10 | options | Skipped | Local parquet exists.
+2026-07-09 | stocks | Skipped | Local parquet exists.
+2026-07-09 | options | Skipped | Local parquet exists.
+2026-07-08 | stocks | Skipped | Local parquet exists.
+2026-07-08 | options | Skipped | Local parquet exists.
+2026-07-07 | stocks | Skipped | Local parquet exists.
+2026-07-07 | options | Skipped | Local parquet exists.
+2026-07-06 | stocks | Skipped | Local parquet exists.
+2026-07-06 | options | Skipped | Local parquet exists.
+2026-07-05 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-05 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-04 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-04 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-03 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-03 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-02 | stocks | Skipped | Local parquet exists.
+2026-07-02 | options | Skipped | Local parquet exists.
+2026-07-01 | stocks | Skipped | Local parquet exists.
+2026-07-01 | options | Skipped | Local parquet exists.
+2026-06-30 | stocks | Skipped | Local parquet exists.
+2026-06-30 | options | Skipped | Local parquet exists.
+2026-06-29 | stocks | Skipped | Local parquet exists.
+2026-06-29 | options | Skipped | Local parquet exists.
+2026-06-28 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-28 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-27 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-27 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-26 | stocks | Skipped | Local parquet exists.
+2026-06-26 | options | Skipped | Local parquet exists.
+2026-06-25 | stocks | Skipped | Local parquet exists.
+2026-06-25 | options | Skipped | Local parquet exists.
+2026-06-24 | stocks | Skipped | Local parquet exists.
+2026-06-24 | options | Skipped | Local parquet exists.
+2026-06-23 | stocks | Skipped | Local parquet exists.
+2026-06-23 | options | Skipped | Local parquet exists.
+2026-06-22 | stocks | Skipped | Local parquet exists.
+2026-06-22 | options | Skipped | Local parquet exists.
+2026-06-21 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-21 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-20 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-20 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-19 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-19 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-18 | stocks | Skipped | Local parquet exists.
+2026-06-18 | options | Skipped | Local parquet exists.
+2026-06-17 | stocks | Skipped | Local parquet exists.
+2026-06-17 | options | Skipped | Local parquet exists.
+2026-06-16 | stocks | Skipped | Local parquet exists.
+2026-06-16 | options | Skipped | Local parquet exists.
+2026-06-15 | stocks | Skipped | Local parquet exists.
+2026-06-15 | options | Skipped | Local parquet exists.
+2026-06-14 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-14 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-13 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-13 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-12 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-12 | options | Success | Converted CSV.gz -> Parquet
+2026-06-11 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-11 | options | Success | Converted CSV.gz -> Parquet
+2026-06-10 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-10 | options | Success | Converted CSV.gz -> Parquet
+2026-06-09 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-09 | options | Success | Converted CSV.gz -> Parquet
+2026-06-08 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-08 | options | Success | Converted CSV.gz -> Parquet
+2026-06-07 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-07 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-06 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-06 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-06-05 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-05 | options | Success | Converted CSV.gz -> Parquet
+2026-06-04 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-04 | options | Success | Converted CSV.gz -> Parquet
+2026-06-03 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-03 | options | Success | Converted CSV.gz -> Parquet
+2026-06-02 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-02 | options | Success | Converted CSV.gz -> Parquet
+2026-06-01 | stocks | Success | Converted CSV.gz -> Parquet
+2026-06-01 | options | Success | Converted CSV.gz -> Parquet
+2026-05-31 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-31 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-30 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-30 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-29 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-29 | options | Success | Converted CSV.gz -> Parquet
+2026-05-28 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-28 | options | Success | Converted CSV.gz -> Parquet
+2026-05-27 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-27 | options | Success | Converted CSV.gz -> Parquet
+2026-05-26 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-26 | options | Success | Converted CSV.gz -> Parquet
+2026-05-25 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-25 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-24 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-24 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-23 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-23 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-22 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-22 | options | Success | Converted CSV.gz -> Parquet
+2026-05-21 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-21 | options | Success | Converted CSV.gz -> Parquet
+2026-05-20 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-20 | options | Success | Converted CSV.gz -> Parquet
+2026-05-19 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-19 | options | Success | Converted CSV.gz -> Parquet
+2026-05-18 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-18 | options | Success | Converted CSV.gz -> Parquet
+2026-05-17 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-17 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-16 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-16 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-15 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-15 | options | Success | Converted CSV.gz -> Parquet
+2026-05-14 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-14 | options | Success | Converted CSV.gz -> Parquet
+2026-05-13 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-13 | options | Success | Converted CSV.gz -> Parquet
+2026-05-12 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-12 | options | Success | Converted CSV.gz -> Parquet
+2026-05-11 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-11 | options | Success | Converted CSV.gz -> Parquet
+2026-05-10 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-10 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-09 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-09 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-08 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-08 | options | Success | Converted CSV.gz -> Parquet
+2026-05-07 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-07 | options | Success | Converted CSV.gz -> Parquet
+2026-05-06 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-06 | options | Success | Converted CSV.gz -> Parquet
+2026-05-05 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-05 | options | Success | Converted CSV.gz -> Parquet
+2026-05-04 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-04 | options | Success | Converted CSV.gz -> Parquet
+2026-05-03 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-03 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-02 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-02 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-05-01 | stocks | Success | Converted CSV.gz -> Parquet
+2026-05-01 | options | Success | Converted CSV.gz -> Parquet
+2026-04-30 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-30 | options | Success | Converted CSV.gz -> Parquet
+2026-04-29 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-29 | options | Success | Converted CSV.gz -> Parquet
+2026-04-28 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-28 | options | Success | Converted CSV.gz -> Parquet
+2026-04-27 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-27 | options | Success | Converted CSV.gz -> Parquet
+2026-04-26 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-26 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-25 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-25 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-24 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-24 | options | Success | Converted CSV.gz -> Parquet
+2026-04-23 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-23 | options | Success | Converted CSV.gz -> Parquet
+2026-04-22 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-22 | options | Success | Converted CSV.gz -> Parquet
+2026-04-21 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-21 | options | Success | Converted CSV.gz -> Parquet
+2026-04-20 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-20 | options | Success | Converted CSV.gz -> Parquet
+2026-04-19 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-19 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-18 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-18 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-17 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-17 | options | Success | Converted CSV.gz -> Parquet
+2026-04-16 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-16 | options | Success | Converted CSV.gz -> Parquet
+2026-04-15 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-15 | options | Success | Converted CSV.gz -> Parquet
+2026-04-14 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-14 | options | Success | Converted CSV.gz -> Parquet
+2026-04-13 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-13 | options | Success | Converted CSV.gz -> Parquet
+2026-04-12 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-12 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-11 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-11 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-10 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-10 | options | Success | Converted CSV.gz -> Parquet
+2026-04-09 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-09 | options | Success | Converted CSV.gz -> Parquet
+2026-04-08 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-08 | options | Success | Converted CSV.gz -> Parquet
+2026-04-07 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-07 | options | Success | Converted CSV.gz -> Parquet
+2026-04-06 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-06 | options | Success | Converted CSV.gz -> Parquet
+2026-04-05 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-05 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-04 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-04 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-03 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-03 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-04-02 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-02 | options | Success | Converted CSV.gz -> Parquet
+2026-04-01 | stocks | Success | Converted CSV.gz -> Parquet
+2026-04-01 | options | Success | Converted CSV.gz -> Parquet
+2026-03-31 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-31 | options | Success | Converted CSV.gz -> Parquet
+2026-03-30 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-30 | options | Success | Converted CSV.gz -> Parquet
+2026-03-29 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-29 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-28 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-28 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-27 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-27 | options | Success | Converted CSV.gz -> Parquet
+2026-03-26 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-26 | options | Success | Converted CSV.gz -> Parquet
+2026-03-25 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-25 | options | Success | Converted CSV.gz -> Parquet
+2026-03-24 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-24 | options | Success | Converted CSV.gz -> Parquet
+2026-03-23 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-23 | options | Success | Converted CSV.gz -> Parquet
+2026-03-22 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-22 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-21 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-21 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-20 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-20 | options | Success | Converted CSV.gz -> Parquet
+2026-03-19 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-19 | options | Success | Converted CSV.gz -> Parquet
+2026-03-18 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-18 | options | Success | Converted CSV.gz -> Parquet
+2026-03-17 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-17 | options | Success | Converted CSV.gz -> Parquet
+2026-03-16 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-16 | options | Success | Converted CSV.gz -> Parquet
+2026-03-15 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-15 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-14 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-14 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-13 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-13 | options | Success | Converted CSV.gz -> Parquet
+2026-03-12 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-12 | options | Success | Converted CSV.gz -> Parquet
+2026-03-11 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-11 | options | Success | Converted CSV.gz -> Parquet
+2026-03-10 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-10 | options | Success | Converted CSV.gz -> Parquet
+2026-03-09 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-09 | options | Success | Converted CSV.gz -> Parquet
+2026-03-08 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-08 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-07 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-07 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-06 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-06 | options | Success | Converted CSV.gz -> Parquet
+2026-03-05 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-05 | options | Success | Converted CSV.gz -> Parquet
+2026-03-04 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-04 | options | Success | Converted CSV.gz -> Parquet
+2026-03-03 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-03 | options | Success | Converted CSV.gz -> Parquet
+2026-03-02 | stocks | Success | Converted CSV.gz -> Parquet
+2026-03-02 | options | Success | Converted CSV.gz -> Parquet
+2026-03-01 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-03-01 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-28 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-28 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-27 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-27 | options | Success | Converted CSV.gz -> Parquet
+2026-02-26 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-26 | options | Success | Converted CSV.gz -> Parquet
+2026-02-25 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-25 | options | Success | Converted CSV.gz -> Parquet
+2026-02-24 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-24 | options | Success | Converted CSV.gz -> Parquet
+2026-02-23 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-23 | options | Success | Converted CSV.gz -> Parquet
+2026-02-22 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-22 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-21 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-21 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-20 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-20 | options | Success | Converted CSV.gz -> Parquet
+2026-02-19 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-19 | options | Success | Converted CSV.gz -> Parquet
+2026-02-18 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-18 | options | Success | Converted CSV.gz -> Parquet
+2026-02-17 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-17 | options | Success | Converted CSV.gz -> Parquet
+2026-02-16 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-16 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-15 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-15 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-14 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-14 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-13 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-13 | options | Success | Converted CSV.gz -> Parquet
+2026-02-12 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-12 | options | Success | Converted CSV.gz -> Parquet
+2026-02-11 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-11 | options | Success | Converted CSV.gz -> Parquet
+2026-02-10 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-10 | options | Success | Converted CSV.gz -> Parquet
+2026-02-09 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-09 | options | Success | Converted CSV.gz -> Parquet
+2026-02-08 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-08 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-07 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-07 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-06 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-06 | options | Success | Converted CSV.gz -> Parquet
+2026-02-05 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-05 | options | Success | Converted CSV.gz -> Parquet
+2026-02-04 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-04 | options | Success | Converted CSV.gz -> Parquet
+2026-02-03 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-03 | options | Success | Converted CSV.gz -> Parquet
+2026-02-02 | stocks | Success | Converted CSV.gz -> Parquet
+2026-02-02 | options | Success | Converted CSV.gz -> Parquet
+2026-02-01 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-02-01 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-31 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-31 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-30 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-30 | options | Success | Converted CSV.gz -> Parquet
+2026-01-29 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-29 | options | Success | Converted CSV.gz -> Parquet
+2026-01-28 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-28 | options | Success | Converted CSV.gz -> Parquet
+2026-01-27 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-27 | options | Success | Converted CSV.gz -> Parquet
+2026-01-26 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-26 | options | Success | Converted CSV.gz -> Parquet
+2026-01-25 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-25 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-24 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-24 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-23 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-23 | options | Success | Converted CSV.gz -> Parquet
+2026-01-22 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-22 | options | Success | Converted CSV.gz -> Parquet
+2026-01-21 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-21 | options | Success | Converted CSV.gz -> Parquet
+2026-01-20 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-20 | options | Success | Converted CSV.gz -> Parquet
+2026-01-19 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-19 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-18 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-18 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-17 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-17 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-16 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-16 | options | Success | Converted CSV.gz -> Parquet
+2026-01-15 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-15 | options | Success | Converted CSV.gz -> Parquet
+2026-01-14 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-14 | options | Success | Converted CSV.gz -> Parquet
+2026-01-13 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-13 | options | Success | Converted CSV.gz -> Parquet
+2026-01-12 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-12 | options | Success | Converted CSV.gz -> Parquet
+2026-01-11 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-11 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-10 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-10 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-09 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-09 | options | Success | Converted CSV.gz -> Parquet
+2026-01-08 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-08 | options | Success | Converted CSV.gz -> Parquet
+2026-01-07 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-07 | options | Success | Converted CSV.gz -> Parquet
+2026-01-06 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-06 | options | Success | Converted CSV.gz -> Parquet
+2026-01-05 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-05 | options | Success | Converted CSV.gz -> Parquet
+2026-01-04 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-04 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-03 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-03 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-02 | stocks | Success | Converted CSV.gz -> Parquet
+2026-01-02 | options | Success | Converted CSV.gz -> Parquet
+2026-01-01 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-01-01 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-31 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-31 | options | Success | Converted CSV.gz -> Parquet
+2025-12-30 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-30 | options | Success | Converted CSV.gz -> Parquet
+2025-12-29 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-29 | options | Success | Converted CSV.gz -> Parquet
+2025-12-28 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-28 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-27 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-27 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-26 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-26 | options | Success | Converted CSV.gz -> Parquet
+2025-12-25 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-25 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-24 | options | Success | Converted CSV.gz -> Parquet
+2025-12-23 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-23 | options | Success | Converted CSV.gz -> Parquet
+2025-12-22 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-22 | options | Success | Converted CSV.gz -> Parquet
+2025-12-21 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-21 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-20 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-20 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-19 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-19 | options | Success | Converted CSV.gz -> Parquet
+2025-12-18 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-18 | options | Success | Converted CSV.gz -> Parquet
+2025-12-17 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-17 | options | Success | Converted CSV.gz -> Parquet
+2025-12-16 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-16 | options | Success | Converted CSV.gz -> Parquet
+2025-12-15 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-15 | options | Success | Converted CSV.gz -> Parquet
+2025-12-14 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-14 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-13 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-13 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-12 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-12 | options | Success | Converted CSV.gz -> Parquet
+2025-12-11 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-11 | options | Success | Converted CSV.gz -> Parquet
+2025-12-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-10 | options | Success | Converted CSV.gz -> Parquet
+2025-12-09 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-09 | options | Success | Converted CSV.gz -> Parquet
+2025-12-08 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-08 | options | Success | Converted CSV.gz -> Parquet
+2025-12-07 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-07 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-06 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-06 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-12-05 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-05 | options | Success | Converted CSV.gz -> Parquet
+2025-12-04 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-04 | options | Success | Converted CSV.gz -> Parquet
+2025-12-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-03 | options | Success | Converted CSV.gz -> Parquet
+2025-12-02 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-02 | options | Success | Converted CSV.gz -> Parquet
+2025-12-01 | stocks | Success | Converted CSV.gz -> Parquet
+2025-12-01 | options | Success | Converted CSV.gz -> Parquet
+2025-11-30 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-30 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-29 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-29 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-28 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-28 | options | Success | Converted CSV.gz -> Parquet
+2025-11-27 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-27 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-26 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-26 | options | Success | Converted CSV.gz -> Parquet
+2025-11-25 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-25 | options | Success | Converted CSV.gz -> Parquet
+2025-11-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-24 | options | Success | Converted CSV.gz -> Parquet
+2025-11-23 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-23 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-22 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-22 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-21 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-21 | options | Success | Converted CSV.gz -> Parquet
+2025-11-20 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-20 | options | Success | Converted CSV.gz -> Parquet
+2025-11-19 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-19 | options | Success | Converted CSV.gz -> Parquet
+2025-11-18 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-18 | options | Success | Converted CSV.gz -> Parquet
+2025-11-17 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-17 | options | Success | Converted CSV.gz -> Parquet
+2025-11-16 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-16 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-15 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-15 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-14 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-14 | options | Success | Converted CSV.gz -> Parquet
+2025-11-13 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-13 | options | Success | Converted CSV.gz -> Parquet
+2025-11-12 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-12 | options | Success | Converted CSV.gz -> Parquet
+2025-11-11 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-11 | options | Success | Converted CSV.gz -> Parquet
+2025-11-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-10 | options | Success | Converted CSV.gz -> Parquet
+2025-11-09 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-09 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-08 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-08 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-07 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-07 | options | Success | Converted CSV.gz -> Parquet
+2025-11-06 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-06 | options | Success | Converted CSV.gz -> Parquet
+2025-11-05 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-05 | options | Success | Converted CSV.gz -> Parquet
+2025-11-04 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-04 | options | Success | Converted CSV.gz -> Parquet
+2025-11-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-11-03 | options | Success | Converted CSV.gz -> Parquet
+2025-11-02 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-02 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-01 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-11-01 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-31 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-31 | options | Success | Converted CSV.gz -> Parquet
+2025-10-30 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-30 | options | Success | Converted CSV.gz -> Parquet
+2025-10-29 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-29 | options | Success | Converted CSV.gz -> Parquet
+2025-10-28 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-28 | options | Success | Converted CSV.gz -> Parquet
+2025-10-27 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-27 | options | Success | Converted CSV.gz -> Parquet
+2025-10-26 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-26 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-25 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-25 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-24 | options | Success | Converted CSV.gz -> Parquet
+2025-10-23 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-23 | options | Success | Converted CSV.gz -> Parquet
+2025-10-22 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-22 | options | Success | Converted CSV.gz -> Parquet
+2025-10-21 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-21 | options | Success | Converted CSV.gz -> Parquet
+2025-10-20 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-20 | options | Success | Converted CSV.gz -> Parquet
+2025-10-19 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-19 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-18 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-18 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-17 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-17 | options | Success | Converted CSV.gz -> Parquet
+2025-10-16 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-16 | options | Success | Converted CSV.gz -> Parquet
+2025-10-15 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-15 | options | Success | Converted CSV.gz -> Parquet
+2025-10-14 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-14 | options | Success | Converted CSV.gz -> Parquet
+2025-10-13 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-13 | options | Success | Converted CSV.gz -> Parquet
+2025-10-12 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-12 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-11 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-11 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-10 | options | Success | Converted CSV.gz -> Parquet
+2025-10-09 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-09 | options | Success | Converted CSV.gz -> Parquet
+2025-10-08 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-08 | options | Success | Converted CSV.gz -> Parquet
+2025-10-07 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-07 | options | Success | Converted CSV.gz -> Parquet
+2025-10-06 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-06 | options | Success | Converted CSV.gz -> Parquet
+2025-10-05 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-05 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-04 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-04 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-10-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-03 | options | Success | Converted CSV.gz -> Parquet
+2025-10-02 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-02 | options | Success | Converted CSV.gz -> Parquet
+2025-10-01 | stocks | Success | Converted CSV.gz -> Parquet
+2025-10-01 | options | Success | Converted CSV.gz -> Parquet
+2025-09-30 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-30 | options | Success | Converted CSV.gz -> Parquet
+2025-09-29 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-29 | options | Success | Converted CSV.gz -> Parquet
+2025-09-28 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-28 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-27 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-27 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-26 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-26 | options | Success | Converted CSV.gz -> Parquet
+2025-09-25 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-25 | options | Success | Converted CSV.gz -> Parquet
+2025-09-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-24 | options | Success | Converted CSV.gz -> Parquet
+2025-09-23 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-23 | options | Success | Converted CSV.gz -> Parquet
+2025-09-22 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-22 | options | Success | Converted CSV.gz -> Parquet
+2025-09-21 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-21 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-20 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-20 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-19 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-19 | options | Success | Converted CSV.gz -> Parquet
+2025-09-18 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-18 | options | Success | Converted CSV.gz -> Parquet
+2025-09-17 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-17 | options | Success | Converted CSV.gz -> Parquet
+2025-09-16 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-16 | options | Success | Converted CSV.gz -> Parquet
+2025-09-15 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-15 | options | Success | Converted CSV.gz -> Parquet
+2025-09-14 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-14 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-13 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-13 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-12 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-12 | options | Success | Converted CSV.gz -> Parquet
+2025-09-11 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-11 | options | Success | Converted CSV.gz -> Parquet
+2025-09-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-10 | options | Success | Converted CSV.gz -> Parquet
+2025-09-09 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-09 | options | Success | Converted CSV.gz -> Parquet
+2025-09-08 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-08 | options | Success | Converted CSV.gz -> Parquet
+2025-09-07 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-07 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-06 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-06 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-05 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-05 | options | Success | Converted CSV.gz -> Parquet
+2025-09-04 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-04 | options | Success | Converted CSV.gz -> Parquet
+2025-09-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-03 | options | Success | Converted CSV.gz -> Parquet
+2025-09-02 | stocks | Success | Converted CSV.gz -> Parquet
+2025-09-02 | options | Success | Converted CSV.gz -> Parquet
+2025-09-01 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-09-01 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-31 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-31 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-30 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-30 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-29 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-29 | options | Success | Converted CSV.gz -> Parquet
+2025-08-28 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-28 | options | Success | Converted CSV.gz -> Parquet
+2025-08-27 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-27 | options | Success | Converted CSV.gz -> Parquet
+2025-08-26 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-26 | options | Success | Converted CSV.gz -> Parquet
+2025-08-25 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-25 | options | Success | Converted CSV.gz -> Parquet
+2025-08-24 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-24 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-23 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-23 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-22 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-22 | options | Success | Converted CSV.gz -> Parquet
+2025-08-21 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-21 | options | Success | Converted CSV.gz -> Parquet
+2025-08-20 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-20 | options | Success | Converted CSV.gz -> Parquet
+2025-08-19 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-19 | options | Success | Converted CSV.gz -> Parquet
+2025-08-18 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-18 | options | Success | Converted CSV.gz -> Parquet
+2025-08-17 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-17 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-16 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-16 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-15 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-15 | options | Success | Converted CSV.gz -> Parquet
+2025-08-14 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-14 | options | Success | Converted CSV.gz -> Parquet
+2025-08-13 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-13 | options | Success | Converted CSV.gz -> Parquet
+2025-08-12 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-12 | options | Success | Converted CSV.gz -> Parquet
+2025-08-11 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-11 | options | Success | Converted CSV.gz -> Parquet
+2025-08-10 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-10 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-09 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-09 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-08 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-08 | options | Success | Converted CSV.gz -> Parquet
+2025-08-07 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-07 | options | Success | Converted CSV.gz -> Parquet
+2025-08-06 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-06 | options | Success | Converted CSV.gz -> Parquet
+2025-08-05 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-05 | options | Success | Converted CSV.gz -> Parquet
+2025-08-04 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-04 | options | Success | Converted CSV.gz -> Parquet
+2025-08-03 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-03 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-02 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-02 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-08-01 | stocks | Success | Converted CSV.gz -> Parquet
+2025-08-01 | options | Success | Converted CSV.gz -> Parquet
+2025-07-31 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-31 | options | Success | Converted CSV.gz -> Parquet
+2025-07-30 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-30 | options | Success | Converted CSV.gz -> Parquet
+2025-07-29 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-29 | options | Success | Converted CSV.gz -> Parquet
+2025-07-28 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-28 | options | Success | Converted CSV.gz -> Parquet
+2025-07-27 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-27 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-26 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-26 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-25 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-25 | options | Success | Converted CSV.gz -> Parquet
+2025-07-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-24 | options | Success | Converted CSV.gz -> Parquet
+2025-07-23 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-23 | options | Success | Converted CSV.gz -> Parquet
+2025-07-22 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-22 | options | Success | Converted CSV.gz -> Parquet
+2025-07-21 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-21 | options | Success | Converted CSV.gz -> Parquet
+2025-07-20 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-20 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-19 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-19 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-18 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-18 | options | Success | Converted CSV.gz -> Parquet
+2025-07-17 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-17 | options | Success | Converted CSV.gz -> Parquet
+2025-07-16 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-16 | options | Success | Converted CSV.gz -> Parquet
+2025-07-15 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-15 | options | Success | Converted CSV.gz -> Parquet
+2025-07-14 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-14 | options | Success | Converted CSV.gz -> Parquet
+2025-07-13 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-13 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-12 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-12 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-11 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-11 | options | Success | Converted CSV.gz -> Parquet
+2025-07-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-10 | options | Success | Converted CSV.gz -> Parquet
+2025-07-09 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-09 | options | Success | Converted CSV.gz -> Parquet
+2025-07-08 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-08 | options | Success | Converted CSV.gz -> Parquet
+2025-07-07 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-07 | options | Success | Converted CSV.gz -> Parquet
+2025-07-06 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-06 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-05 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-05 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-04 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-04 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-07-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-03 | options | Success | Converted CSV.gz -> Parquet
+2025-07-02 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-02 | options | Success | Converted CSV.gz -> Parquet
+2025-07-01 | stocks | Success | Converted CSV.gz -> Parquet
+2025-07-01 | options | Success | Converted CSV.gz -> Parquet
+2025-06-30 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-30 | options | Success | Converted CSV.gz -> Parquet
+2025-06-29 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-29 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-28 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-28 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-27 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-27 | options | Success | Converted CSV.gz -> Parquet
+2025-06-26 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-26 | options | Success | Converted CSV.gz -> Parquet
+2025-06-25 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-25 | options | Success | Converted CSV.gz -> Parquet
+2025-06-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-24 | options | Success | Converted CSV.gz -> Parquet
+2025-06-23 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-23 | options | Success | Converted CSV.gz -> Parquet
+2025-06-22 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-22 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-21 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-21 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-20 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-20 | options | Success | Converted CSV.gz -> Parquet
+2025-06-19 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-19 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-18 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-18 | options | Success | Converted CSV.gz -> Parquet
+2025-06-17 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-17 | options | Success | Converted CSV.gz -> Parquet
+2025-06-16 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-16 | options | Success | Converted CSV.gz -> Parquet
+2025-06-15 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-15 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-14 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-14 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-13 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-13 | options | Success | Converted CSV.gz -> Parquet
+2025-06-12 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-12 | options | Success | Converted CSV.gz -> Parquet
+2025-06-11 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-11 | options | Success | Converted CSV.gz -> Parquet
+2025-06-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-10 | options | Success | Converted CSV.gz -> Parquet
+2025-06-09 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-09 | options | Success | Converted CSV.gz -> Parquet
+2025-06-08 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-08 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-07 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-07 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-06 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-06 | options | Success | Converted CSV.gz -> Parquet
+2025-06-05 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-05 | options | Success | Converted CSV.gz -> Parquet
+2025-06-04 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-04 | options | Success | Converted CSV.gz -> Parquet
+2025-06-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-03 | options | Success | Converted CSV.gz -> Parquet
+2025-06-02 | stocks | Success | Converted CSV.gz -> Parquet
+2025-06-02 | options | Success | Converted CSV.gz -> Parquet
+2025-06-01 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-06-01 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-31 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-31 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-30 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-30 | options | Success | Converted CSV.gz -> Parquet
+2025-05-29 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-29 | options | Success | Converted CSV.gz -> Parquet
+2025-05-28 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-28 | options | Success | Converted CSV.gz -> Parquet
+2025-05-27 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-27 | options | Success | Converted CSV.gz -> Parquet
+2025-05-26 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-26 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-25 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-25 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-24 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-24 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-23 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-23 | options | Success | Converted CSV.gz -> Parquet
+2025-05-22 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-22 | options | Success | Converted CSV.gz -> Parquet
+2025-05-21 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-21 | options | Success | Converted CSV.gz -> Parquet
+2025-05-20 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-20 | options | Success | Converted CSV.gz -> Parquet
+2025-05-19 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-19 | options | Success | Converted CSV.gz -> Parquet
+2025-05-18 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-18 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-17 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-17 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-16 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-16 | options | Success | Converted CSV.gz -> Parquet
+2025-05-15 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-15 | options | Success | Converted CSV.gz -> Parquet
+2025-05-14 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-14 | options | Success | Converted CSV.gz -> Parquet
+2025-05-13 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-13 | options | Success | Converted CSV.gz -> Parquet
+2025-05-12 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-12 | options | Success | Converted CSV.gz -> Parquet
+2025-05-11 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-11 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-10 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-10 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-09 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-09 | options | Success | Converted CSV.gz -> Parquet
+2025-05-08 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-08 | options | Success | Converted CSV.gz -> Parquet
+2025-05-07 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-07 | options | Success | Converted CSV.gz -> Parquet
+2025-05-06 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-06 | options | Success | Converted CSV.gz -> Parquet
+2025-05-05 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-05 | options | Success | Converted CSV.gz -> Parquet
+2025-05-04 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-04 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-03 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-03 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-05-02 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-02 | options | Success | Converted CSV.gz -> Parquet
+2025-05-01 | stocks | Success | Converted CSV.gz -> Parquet
+2025-05-01 | options | Success | Converted CSV.gz -> Parquet
+2025-04-30 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-30 | options | Success | Converted CSV.gz -> Parquet
+2025-04-29 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-29 | options | Success | Converted CSV.gz -> Parquet
+2025-04-28 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-28 | options | Success | Converted CSV.gz -> Parquet
+2025-04-27 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-27 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-26 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-26 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-25 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-25 | options | Success | Converted CSV.gz -> Parquet
+2025-04-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-24 | options | Success | Converted CSV.gz -> Parquet
+2025-04-23 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-23 | options | Success | Converted CSV.gz -> Parquet
+2025-04-22 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-22 | options | Success | Converted CSV.gz -> Parquet
+2025-04-21 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-21 | options | Success | Converted CSV.gz -> Parquet
+2025-04-20 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-20 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-19 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-19 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-18 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-18 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-17 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-17 | options | Success | Converted CSV.gz -> Parquet
+2025-04-16 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-16 | options | Success | Converted CSV.gz -> Parquet
+2025-04-15 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-15 | options | Success | Converted CSV.gz -> Parquet
+2025-04-14 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-14 | options | Success | Converted CSV.gz -> Parquet
+2025-04-13 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-13 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-12 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-12 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-11 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-11 | options | Success | Converted CSV.gz -> Parquet
+2025-04-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-10 | options | Success | Converted CSV.gz -> Parquet
+2025-04-09 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-09 | options | Success | Converted CSV.gz -> Parquet
+2025-04-08 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-08 | options | Success | Converted CSV.gz -> Parquet
+2025-04-07 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-07 | options | Success | Converted CSV.gz -> Parquet
+2025-04-06 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-06 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-05 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-05 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-04-04 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-04 | options | Success | Converted CSV.gz -> Parquet
+2025-04-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-03 | options | Success | Converted CSV.gz -> Parquet
+2025-04-02 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-02 | options | Success | Converted CSV.gz -> Parquet
+2025-04-01 | stocks | Success | Converted CSV.gz -> Parquet
+2025-04-01 | options | Success | Converted CSV.gz -> Parquet
+2025-03-31 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-31 | options | Success | Converted CSV.gz -> Parquet
+2025-03-30 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-30 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-29 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-29 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-28 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-28 | options | Success | Converted CSV.gz -> Parquet
+2025-03-27 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-27 | options | Success | Converted CSV.gz -> Parquet
+2025-03-26 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-26 | options | Success | Converted CSV.gz -> Parquet
+2025-03-25 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-25 | options | Success | Converted CSV.gz -> Parquet
+2025-03-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-24 | options | Success | Converted CSV.gz -> Parquet
+2025-03-23 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-23 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-22 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-22 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-21 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-21 | options | Success | Converted CSV.gz -> Parquet
+2025-03-20 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-20 | options | Success | Converted CSV.gz -> Parquet
+2025-03-19 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-19 | options | Success | Converted CSV.gz -> Parquet
+2025-03-18 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-18 | options | Success | Converted CSV.gz -> Parquet
+2025-03-17 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-17 | options | Success | Converted CSV.gz -> Parquet
+2025-03-16 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-16 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-15 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-15 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-14 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-14 | options | Success | Converted CSV.gz -> Parquet
+2025-03-13 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-13 | options | Success | Converted CSV.gz -> Parquet
+2025-03-12 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-12 | options | Success | Converted CSV.gz -> Parquet
+2025-03-11 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-11 | options | Success | Converted CSV.gz -> Parquet
+2025-03-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-10 | options | Success | Converted CSV.gz -> Parquet
+2025-03-09 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-09 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-08 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-08 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-07 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-07 | options | Success | Converted CSV.gz -> Parquet
+2025-03-06 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-06 | options | Success | Converted CSV.gz -> Parquet
+2025-03-05 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-05 | options | Success | Converted CSV.gz -> Parquet
+2025-03-04 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-04 | options | Success | Converted CSV.gz -> Parquet
+2025-03-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-03-03 | options | Success | Converted CSV.gz -> Parquet
+2025-03-02 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-02 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-01 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-03-01 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-28 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-28 | options | Success | Converted CSV.gz -> Parquet
+2025-02-27 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-27 | options | Success | Converted CSV.gz -> Parquet
+2025-02-26 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-26 | options | Success | Converted CSV.gz -> Parquet
+2025-02-25 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-25 | options | Success | Converted CSV.gz -> Parquet
+2025-02-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-24 | options | Success | Converted CSV.gz -> Parquet
+2025-02-23 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-23 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-22 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-22 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-21 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-21 | options | Success | Converted CSV.gz -> Parquet
+2025-02-20 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-20 | options | Success | Converted CSV.gz -> Parquet
+2025-02-19 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-19 | options | Success | Converted CSV.gz -> Parquet
+2025-02-18 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-18 | options | Success | Converted CSV.gz -> Parquet
+2025-02-17 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-17 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-16 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-16 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-15 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-15 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-14 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-14 | options | Success | Converted CSV.gz -> Parquet
+2025-02-13 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-13 | options | Success | Converted CSV.gz -> Parquet
+2025-02-12 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-12 | options | Success | Converted CSV.gz -> Parquet
+2025-02-11 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-11 | options | Success | Converted CSV.gz -> Parquet
+2025-02-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-10 | options | Success | Converted CSV.gz -> Parquet
+2025-02-09 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-09 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-08 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-08 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-07 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-07 | options | Success | Converted CSV.gz -> Parquet
+2025-02-06 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-06 | options | Success | Converted CSV.gz -> Parquet
+2025-02-05 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-05 | options | Success | Converted CSV.gz -> Parquet
+2025-02-04 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-04 | options | Success | Converted CSV.gz -> Parquet
+2025-02-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-02-03 | options | Success | Converted CSV.gz -> Parquet
+2025-02-02 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-02 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-01 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-02-01 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-31 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-31 | options | Success | Converted CSV.gz -> Parquet
+2025-01-30 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-30 | options | Success | Converted CSV.gz -> Parquet
+2025-01-29 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-29 | options | Success | Converted CSV.gz -> Parquet
+2025-01-28 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-28 | options | Success | Converted CSV.gz -> Parquet
+2025-01-27 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-27 | options | Success | Converted CSV.gz -> Parquet
+2025-01-26 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-26 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-25 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-25 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-24 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-24 | options | Success | Converted CSV.gz -> Parquet
+2025-01-23 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-23 | options | Success | Converted CSV.gz -> Parquet
+2025-01-22 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-22 | options | Success | Converted CSV.gz -> Parquet
+2025-01-21 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-21 | options | Success | Converted CSV.gz -> Parquet
+2025-01-20 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-20 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-19 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-19 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-18 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-18 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-17 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-17 | options | Success | Converted CSV.gz -> Parquet
+2025-01-16 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-16 | options | Success | Converted CSV.gz -> Parquet
+2025-01-15 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-15 | options | Success | Converted CSV.gz -> Parquet
+2025-01-14 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-14 | options | Success | Converted CSV.gz -> Parquet
+2025-01-13 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-13 | options | Success | Converted CSV.gz -> Parquet
+2025-01-12 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-12 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-11 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-11 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-10 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-10 | options | Success | Converted CSV.gz -> Parquet
+2025-01-09 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-09 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-08 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-08 | options | Success | Converted CSV.gz -> Parquet
+2025-01-07 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-07 | options | Success | Converted CSV.gz -> Parquet
+2025-01-06 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-06 | options | Success | Converted CSV.gz -> Parquet
+2025-01-05 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-05 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-04 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-04 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-03 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-03 | options | Success | Converted CSV.gz -> Parquet
+2025-01-02 | stocks | Success | Converted CSV.gz -> Parquet
+2025-01-02 | options | Success | Converted CSV.gz -> Parquet
+2025-01-01 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2025-01-01 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2024-12-31 | stocks | Success | Converted CSV.gz -> Parquet
+2024-12-31 | options | Success | Converted CSV.gz -> Parquet
