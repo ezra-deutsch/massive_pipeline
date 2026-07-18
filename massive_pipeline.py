@@ -123,7 +123,7 @@ def enrich_market_data(df: pl.DataFrame, asset_type: str) -> pl.DataFrame:
 
     return df
 
-def sync_market_data(days_to_check=560, base_data_dir="data", log_dir="logs"):
+def sync_market_data(days_to_check=14, base_data_dir="data", log_dir="logs"):
     """
     Downloads stock and option datasets sequentially from S3, streams them
     into Polars, enriches them, and writes partition-nested Parquet files locally.
@@ -267,7 +267,7 @@ def write_summary_report(log_dir, base_data_dir, summary, report_details):
 def main():
     logger.info("Initializing combined stocks and options synchronization pipeline...")
     # Clean output separation config: Data goes to data/, execution logs and reports go to logs/
-    sync_market_data(days_to_check=560, base_data_dir="data", log_dir="logs")
+    sync_market_data(days_to_check=14, base_data_dir="data", log_dir="logs")
     logger.info("Market data pipeline execution completed successfully.")
 
 if __name__ == "__main__":
