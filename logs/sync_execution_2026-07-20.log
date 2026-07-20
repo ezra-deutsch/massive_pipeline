@@ -1,0 +1,42 @@
+2026-07-20 11:53:18,160 [INFO] (MarketDataSync) Initializing combined stocks and options synchronization pipeline...
+2026-07-20 11:53:18,348 [INFO] (MarketDataSync) Starting synchronization of STOCKS market data...
+2026-07-20 11:53:18,349 [INFO] (MarketDataSync) [STOCKS] Downloading and parsing 2026-07-19.csv.gz directly to memory...
+2026-07-20 11:53:18,903 [ERROR] (MarketDataSync) [STOCKS] S3 Client Error for 2026-07-19: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-20 11:53:18,903 [INFO] (MarketDataSync) [STOCKS] Downloading and parsing 2026-07-18.csv.gz directly to memory...
+2026-07-20 11:53:18,999 [ERROR] (MarketDataSync) [STOCKS] S3 Client Error for 2026-07-18: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-20 11:53:19,000 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260717.parquet. Skipping S3 query.
+2026-07-20 11:53:19,000 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260716.parquet. Skipping S3 query.
+2026-07-20 11:53:19,000 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260715.parquet. Skipping S3 query.
+2026-07-20 11:53:19,001 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260714.parquet. Skipping S3 query.
+2026-07-20 11:53:19,001 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260713.parquet. Skipping S3 query.
+2026-07-20 11:53:19,001 [INFO] (MarketDataSync) [STOCKS] Downloading and parsing 2026-07-12.csv.gz directly to memory...
+2026-07-20 11:53:19,094 [ERROR] (MarketDataSync) [STOCKS] S3 Client Error for 2026-07-12: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-20 11:53:19,094 [INFO] (MarketDataSync) [STOCKS] Downloading and parsing 2026-07-11.csv.gz directly to memory...
+2026-07-20 11:53:19,183 [ERROR] (MarketDataSync) [STOCKS] S3 Client Error for 2026-07-11: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-20 11:53:19,184 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260710.parquet. Skipping S3 query.
+2026-07-20 11:53:19,184 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260709.parquet. Skipping S3 query.
+2026-07-20 11:53:19,184 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260708.parquet. Skipping S3 query.
+2026-07-20 11:53:19,185 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260707.parquet. Skipping S3 query.
+2026-07-20 11:53:19,185 [INFO] (MarketDataSync) [STOCKS] Parquet file already exists locally: daily_20260706.parquet. Skipping S3 query.
+2026-07-20 11:53:19,185 [INFO] (MarketDataSync) Starting synchronization of OPTIONS market data...
+2026-07-20 11:53:19,185 [INFO] (MarketDataSync) [OPTIONS] Downloading and parsing 2026-07-19.csv.gz directly to memory...
+2026-07-20 11:53:19,329 [ERROR] (MarketDataSync) [OPTIONS] S3 Client Error for 2026-07-19: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-20 11:53:19,330 [INFO] (MarketDataSync) [OPTIONS] Downloading and parsing 2026-07-18.csv.gz directly to memory...
+2026-07-20 11:53:19,451 [ERROR] (MarketDataSync) [OPTIONS] S3 Client Error for 2026-07-18: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-20 11:53:19,452 [INFO] (MarketDataSync) [OPTIONS] Downloading and parsing 2026-07-17.csv.gz directly to memory...
+2026-07-20 11:53:19,537 [ERROR] (MarketDataSync) [OPTIONS] S3 Client Error for 2026-07-17: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-20 11:53:19,538 [INFO] (MarketDataSync) [OPTIONS] Parquet file already exists locally: daily_20260716.parquet. Skipping S3 query.
+2026-07-20 11:53:19,538 [INFO] (MarketDataSync) [OPTIONS] Parquet file already exists locally: daily_20260715.parquet. Skipping S3 query.
+2026-07-20 11:53:19,538 [INFO] (MarketDataSync) [OPTIONS] Parquet file already exists locally: daily_20260714.parquet. Skipping S3 query.
+2026-07-20 11:53:19,538 [INFO] (MarketDataSync) [OPTIONS] Parquet file already exists locally: daily_20260713.parquet. Skipping S3 query.
+2026-07-20 11:53:19,538 [INFO] (MarketDataSync) [OPTIONS] Downloading and parsing 2026-07-12.csv.gz directly to memory...
+2026-07-20 11:53:19,627 [ERROR] (MarketDataSync) [OPTIONS] S3 Client Error for 2026-07-12: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-20 11:53:19,628 [INFO] (MarketDataSync) [OPTIONS] Downloading and parsing 2026-07-11.csv.gz directly to memory...
+2026-07-20 11:53:19,714 [ERROR] (MarketDataSync) [OPTIONS] S3 Client Error for 2026-07-11: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-20 11:53:19,715 [INFO] (MarketDataSync) [OPTIONS] Parquet file already exists locally: daily_20260710.parquet. Skipping S3 query.
+2026-07-20 11:53:19,715 [INFO] (MarketDataSync) [OPTIONS] Parquet file already exists locally: daily_20260709.parquet. Skipping S3 query.
+2026-07-20 11:53:19,715 [INFO] (MarketDataSync) [OPTIONS] Parquet file already exists locally: daily_20260708.parquet. Skipping S3 query.
+2026-07-20 11:53:19,715 [INFO] (MarketDataSync) [OPTIONS] Parquet file already exists locally: daily_20260707.parquet. Skipping S3 query.
+2026-07-20 11:53:19,716 [INFO] (MarketDataSync) [OPTIONS] Parquet file already exists locally: daily_20260706.parquet. Skipping S3 query.
+2026-07-20 11:53:19,716 [INFO] (MarketDataSync) Sync report successfully compiled at: logs/sync_report_2026-07-20.txt
+2026-07-20 11:53:19,718 [INFO] (MarketDataSync) Market data pipeline execution completed successfully.

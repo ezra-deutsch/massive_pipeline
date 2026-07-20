@@ -1,0 +1,53 @@
+====================================================
+UNIFIED MARKET DATA SYNC REPORT - 2026-07-20
+====================================================
+Execution Timestamp: 2026-07-20 11:53:19
+Output Data Base:    /home/wsllinux/projects/massive_pipeline/data
+Dedicated Log Dir:   /home/wsllinux/projects/massive_pipeline/logs
+
+STOCKS SYNCHRONIZATION SUMMARY:
+-------------------------------------
+  Total Days Checked:  14
+  Files Converted:     0
+  Already Synced:      10
+  Failed / Unresolved: 4
+
+OPTIONS SYNCHRONIZATION SUMMARY:
+-------------------------------------
+  Total Days Checked:  14
+  Files Converted:     0
+  Already Synced:      9
+  Failed / Unresolved: 5
+
+DETAILED RUN CHRONOLOGY:
+------------------------
+Date       | Asset   | Status   | Notes
+-----------|---------|----------|----------------------------------
+2026-07-19 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-19 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-18 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-18 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-17 | stocks | Skipped | Local parquet exists.
+2026-07-17 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-16 | stocks | Skipped | Local parquet exists.
+2026-07-16 | options | Skipped | Local parquet exists.
+2026-07-15 | stocks | Skipped | Local parquet exists.
+2026-07-15 | options | Skipped | Local parquet exists.
+2026-07-14 | stocks | Skipped | Local parquet exists.
+2026-07-14 | options | Skipped | Local parquet exists.
+2026-07-13 | stocks | Skipped | Local parquet exists.
+2026-07-13 | options | Skipped | Local parquet exists.
+2026-07-12 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-12 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-11 | stocks | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-11 | options | Error | S3 Client Error: An error occurred (NoSuchKey) when calling the GetObject operation: None
+2026-07-10 | stocks | Skipped | Local parquet exists.
+2026-07-10 | options | Skipped | Local parquet exists.
+2026-07-09 | stocks | Skipped | Local parquet exists.
+2026-07-09 | options | Skipped | Local parquet exists.
+2026-07-08 | stocks | Skipped | Local parquet exists.
+2026-07-08 | options | Skipped | Local parquet exists.
+2026-07-07 | stocks | Skipped | Local parquet exists.
+2026-07-07 | options | Skipped | Local parquet exists.
+2026-07-06 | stocks | Skipped | Local parquet exists.
+2026-07-06 | options | Skipped | Local parquet exists.
