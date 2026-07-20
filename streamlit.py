@@ -14,12 +14,31 @@ st.set_page_config(
     layout="wide",
 )
 
-DATA_FOLDER = Path(__file__).resolve().parent / "data" / "options" / "year=2026" / "month=07"
+DATA_FOLDER = Path(__file__).resolve().parent / "data" / "options"
 _DATE_RE = re.compile(r"daily_(\d{8})\.parquet$")
+
+# Schema configuration placeholders
+# Update alias or dtype as needed, then reopen the dashboard.
+SCHEMA_CONFIG = {
+    "option_ticker": {"alias": "ticker", "dtype": pl.Utf8},
+    "volume": {"alias": "volume", "dtype": pl.Int64},
+    "open": {"alias": "open", "dtype": pl.Decimal(scale=2)},
+    "close": {"alias": "close", "dtype": pl.Decimal(scale=2)},
+    "high": {"alias": "high", "dtype": pl.Decimal(scale=2)},
+    "low": {"alias": "low", "dtype": pl.Decimal(scale=2)},
+    "window_start": {"alias": "window_start", "dtype": pl.Date},
+    "transactions": {"alias": "transactions", "dtype": pl.Int64},
+    "asset_class": {"alias": "asset_class", "dtype": pl.Utf8},
+    "processed_at": {"alias": "processed_at", "dtype": pl.Date},
+    "underlying_ticker": {"alias": "underlying_ticker", "dtype": pl.Utf8},
+    "expiration_date": {"alias": "expiration_date", "dtype": pl.Date},
+    "option_type": {"alias": "option_type", "dtype": pl.Utf8},
+    "strike_price": {"alias": "strike_price", "dtype": pl.Decimal(scale=2)},
+}
 
 @st.cache_data
 def list_parquet_files(folder: Path) -> list[Path]:
-    return sorted(folder.glob("daily_*.parquet"))
+    return sorted(folder.rglob("daily_*.parquet"))
 
 
 def parse_date_from_filename(path: Path) -> date | None:
@@ -37,13 +56,72 @@ def available_file_dates(folder: Path) -> list[tuple[date, Path]]:
             dates.append((parsed, path))
     return sorted(dates)
 
+def apply_schema(df: pl.DataFrame) -> pl.DataFrame:
+    rename_map = {}
+    casts = []
+    for source_col, config in SCHEMA_CONFIG.items():
+        if source_col in df.columns:
+            alias = config.get("alias", source_col)
+            dtype = config.get("dtype")
+            if alias != source_col:
+                rename_map[source_col] = alias
+            target_col = source_col if alias == source_col else alias
+            if dtype is not None:
+                if dtype == pl.Date:
+                    if df[target_col].dtype == pl.Utf8:
+                        casts.append(
+                            pl.col(target_col)
+                            .str.strptime(pl.Datetime, "%Y-%m-%dT%H:%M:%S.%f", strict=False)
+                            .dt.date()
+                            .alias(alias)
+                        )
+                    elif df[target_col].dtype == pl.Datetime:
+                        casts.append(pl.col(target_col).dt.date().alias(alias))
+                    else:
+                        casts.append(pl.col(target_col).cast(pl.Date, strict=False).alias(alias))
+                else:
+                    casts.append(pl.col(target_col).cast(dtype).alias(alias))
+
+    if rename_map:
+        df = df.rename(rename_map)
+    if casts:
+        df = df.with_columns(casts)
+    return df
+
+
+def format_date_columns_for_display(df: pl.DataFrame) -> pl.DataFrame:
+    date_columns = [name for name, dtype in df.schema.items() if dtype == pl.Date]
+    if not date_columns:
+        return df
+    formatted = [pl.col(col).dt.strftime("%Y/%m/%d").alias(col) for col in date_columns]
+    return df.with_columns(formatted)
+
 @st.cache_data
-def load_data_for_date_range(file_paths: tuple[str, ...]) -> pl.DataFrame:
-    if not file_paths:
+def load_available_tickers_for_date_range(file_paths: tuple[str, ...]) -> list[str]:
+    tickers: set[str] = set()
+    for path in file_paths:
+        if not path:
+            continue
+        df = pl.read_parquet(path, columns=["underlying_ticker"]).unique()
+        if not df.is_empty():
+            tickers.update(df["underlying_ticker"].to_list())
+    return sorted(tickers)
+
+@st.cache_data
+def load_filtered_data_for_date_range(file_paths: tuple[str, ...], underlying_ticker: str) -> pl.DataFrame:
+    if not file_paths or not underlying_ticker:
         return pl.DataFrame()
-    if len(file_paths) == 1:
-        return pl.read_parquet(file_paths[0])
-    return pl.concat([pl.read_parquet(path) for path in file_paths])
+
+    frames: list[pl.DataFrame] = []
+    for path in file_paths:
+        df = pl.scan_parquet(path).filter(pl.col("underlying_ticker") == underlying_ticker).collect()
+        if not df.is_empty():
+            frames.append(df)
+
+    if not frames:
+        return pl.DataFrame()
+
+    return apply_schema(pl.concat(frames))
 
 @st.cache_data
 def to_csv_bytes(df: pl.DataFrame) -> bytes:
@@ -59,67 +137,7 @@ def to_parquet_bytes(df: pl.DataFrame) -> bytes:
 
 
 def build_filters(df: pl.DataFrame) -> pl.DataFrame:
-    filtered = df
-
-    text_columns = [name for name, dtype in df.schema.items() if dtype == pl.Utf8]
-    numeric_columns = [name for name, dtype in df.schema.items() if dtype.is_numeric()]
-    temporal_columns = [name for name, dtype in df.schema.items() if dtype.is_temporal()]
-
-    st.sidebar.header("Filters")
-    search_column = st.sidebar.selectbox("Search text column", ["", *text_columns])
-    if search_column:
-        search_term = st.sidebar.text_input("Contains", value="")
-        if search_term:
-            filtered = filtered.filter(
-                pl.col(search_column)
-                .str.to_lowercase()
-                .str.contains(search_term.lower(), literal=False)
-            )
-
-    if numeric_columns:
-        numeric_column = st.sidebar.selectbox("Numeric column", ["", *numeric_columns])
-        if numeric_column:
-            min_value = float(filtered[numeric_column].min())
-            max_value = float(filtered[numeric_column].max())
-            range_values = st.sidebar.slider(
-                "Value range",
-                min_value,
-                max_value,
-                (min_value, max_value),
-                step=max((max_value - min_value) / 100.0, 1.0),
-            )
-            filtered = filtered.filter(
-                pl.col(numeric_column).is_between(range_values[0], range_values[1])
-            )
-
-    if temporal_columns:
-        temporal_column = st.sidebar.selectbox("Date/time column", ["", *temporal_columns])
-        if temporal_column:
-            start_date, end_date = st.sidebar.date_input(
-                "Range",
-                value=(filtered[temporal_column].min().date(), filtered[temporal_column].max().date()),
-            )
-            filtered = filtered.filter(
-                pl.col(temporal_column).is_between(
-                    pl.Series([start_date]).cast(pl.Date)[0],
-                    pl.Series([end_date]).cast(pl.Date)[0],
-                )
-            )
-
-    if text_columns:
-        category_column = st.sidebar.selectbox("Category column", ["", *text_columns])
-        if category_column:
-            unique_values = filtered[category_column].unique().to_series().to_list()
-            if len(unique_values) <= 50:
-                selected_values = st.sidebar.multiselect(
-                    f"Show {category_column}", unique_values, default=unique_values[:5]
-                )
-                if selected_values:
-                    filtered = filtered.filter(pl.col(category_column).is_in(selected_values))
-            else:
-                st.sidebar.write(f"{len(unique_values)} unique values. Use the search filter instead.")
-
-    return filtered
+    return df
 
 
 def build_numeric_chart(df: pl.DataFrame, numeric_columns: list[str]) -> alt.Chart | None:
@@ -154,7 +172,11 @@ def build_time_series_chart(df: pl.DataFrame, temporal_columns: list[str], numer
         return None
 
     return alt.Chart(chart_data).mark_line(point=True).encode(
-        x=alt.X(f"{temporal_column}:T", title=temporal_column),
+        x=alt.X(
+            f"{temporal_column}:T",
+            title=temporal_column,
+            axis=alt.Axis(format="%Y/%m/%d"),
+        ),
         y=alt.Y(f"{value_column}:Q", title=value_column),
         tooltip=[temporal_column, value_column],
     ).properties(title=f"{value_column} over {temporal_column}")
@@ -210,23 +232,16 @@ def build_strike_volume_chart(df: pl.DataFrame) -> alt.Chart | None:
 
 def main() -> None:
     st.title("Monthly Options Dashboard")
-    st.write("Load a daily parquet file from `data/options/year=2026/month=07` and explore it with filters.")
+    st.write("Load all daily parquet file from `data/options/` and explore it with filters.")
 
     parquet_files = list_parquet_files(DATA_FOLDER)
     if not parquet_files:
         st.error(f"No parquet files found in {DATA_FOLDER}")
         return
 
-    file_name_map = {file.name: file for file in parquet_files}
-    selected_file_name = st.sidebar.selectbox(
-        "Choose parquet file",
-        options=list(file_name_map.keys()),
-        index=max(0, len(file_name_map) - 1),
-    )
-
     file_dates = available_file_dates(DATA_FOLDER)
     if not file_dates:
-        st.error(f"No parquet files found in {DATA_FOLDER}")
+        st.error(f"No dated parquet files found in {DATA_FOLDER}")
         return
 
     min_date = file_dates[0][0]
@@ -247,15 +262,14 @@ def main() -> None:
         st.warning("No files available for the selected date range.")
         return
 
-    file_path = selected_files[-1]
-    st.sidebar.write(f"**Loaded files:** {len(selected_files)}")
+    st.sidebar.write(f"**Selected files:** {len(selected_files)}")
     st.sidebar.write(f"**Date range:** {start_date} to {end_date}")
 
-    df = load_data_for_date_range(tuple(str(path) for path in selected_files))
-    st.sidebar.write(f"**Rows before ticker filter:** {df.height}")
-    st.sidebar.write(f"**Columns:** {df.width}")
+    underlying_tickers = load_available_tickers_for_date_range(tuple(str(path) for path in selected_files))
+    if not underlying_tickers:
+        st.warning("No underlying tickers found in the selected date range.")
+        return
 
-    underlying_tickers = sorted(df.select("underlying_ticker").unique().to_series().to_list())
     selected_underlying = st.sidebar.selectbox(
         "Select underlying ticker",
         ["", *underlying_tickers],
@@ -265,17 +279,22 @@ def main() -> None:
         st.info("Select an underlying ticker to view sample rows, visualizations, and download options.")
         return
 
-    df = df.filter(pl.col("underlying_ticker") == selected_underlying)
+    df = load_filtered_data_for_date_range(tuple(str(path) for path in selected_files), selected_underlying)
+    if df.is_empty():
+        st.warning("No rows found for the selected underlying ticker in the chosen date range.")
+        return
+
     st.sidebar.write(f"**Selected ticker:** {selected_underlying}")
     st.sidebar.write(f"**Filtered rows:** {df.height}")
 
     filtered_df = build_filters(df)
+    temporal_columns = [name for name, dtype in filtered_df.schema.items() if dtype == pl.Date]
+    if temporal_columns:
+        filtered_df = filtered_df.sort(temporal_columns)
 
-    st.subheader("Data summary")
-    st.write("#### Schema")
-    st.write(df.schema)
-    st.write("#### Sample rows")
-    st.dataframe(filtered_df.head(100), use_container_width=True)
+    st.subheader("Sample rows")
+    display_df = format_date_columns_for_display(filtered_df)
+    st.dataframe(display_df, use_container_width=True)
 
     st.subheader("Visualizations")
     if filtered_df.is_empty():
@@ -311,13 +330,13 @@ def main() -> None:
     st.download_button(
         label="Download CSV",
         data=csv_bytes,
-        file_name=f"{selected_file_name.replace('.parquet', '')}_{selected_underlying}.csv",
+        file_name=f"options_{selected_underlying}_{start_date}_{end_date}.csv",
         mime="text/csv",
     )
     st.download_button(
         label="Download Parquet",
         data=parquet_bytes,
-        file_name=f"{selected_file_name.replace('.parquet', '')}_{selected_underlying}.parquet",
+        file_name=f"options_{selected_underlying}_{start_date}_{end_date}.parquet",
         mime="application/octet-stream",
     )
 

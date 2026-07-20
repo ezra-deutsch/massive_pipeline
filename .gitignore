@@ -8,7 +8,7 @@ wheels/
 data/
 .csv.gz
 .txt
-
+.agents
 
 # Virtual environments
 .venv
